@@ -8,7 +8,7 @@ description: Spec-driven build workflow with MegaLens review gates. Use when sta
 Follow these phases in order. Never skip a gate. The spec is the source of truth for the whole project.
 
 ## Phase 0, Abstract
-The user describes what the app must do in plain words. Ask clarifying questions until requirements are unambiguous. Do not write any code or plan yet.
+The user describes what the app must do in plain words. Ask clarifying questions, at most 5 to 7, batched in one message. Do not write any code or plan yet.
 
 ## Phase 1, Spec
 Write `spec.md` from the abstract:
