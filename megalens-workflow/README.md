@@ -22,9 +22,9 @@ The workflow needs the MegaLens MCP connected for the review gates: https://mega
 
 ## What it enforces
 
-- Spec is the source of truth, wrong output means fix the spec, not patch the code
+- Spec is the source of truth: a missing or wrong requirement is fixed in the spec and the work regenerated; a right requirement the code missed means fix the code; never patch code and leave the spec behind
 - The plan is reviewed by AI models from other companies before any code is written
 - Tests are written first, from acceptance criteria, and never weakened to pass
-- Every milestone diff is reviewed against the spec in fresh context
+- Every milestone diff is reviewed in fresh context, with the spec sent along as context; checking that the work meets the spec stays with you and your assistant
 - Review findings are a filter, not a verdict, each one is verified before applying
 - Nothing ships without your explicit go

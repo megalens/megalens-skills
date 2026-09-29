@@ -18,7 +18,7 @@ Write `spec.md` from the abstract:
 - Security and permissions
 - Out of scope list
 
-Rule: if output is ever wrong later, fix the spec and regenerate. Never patch code and leave the spec behind.
+Rule: if output is ever wrong later, start with the spec. If a requirement is missing or wrong, fix it in the spec and regenerate the affected work. If the requirement was right and the code missed it, fix the code. Never patch code and leave the spec behind.
 
 ## Phase 2, Plan
 Write `plan.md` from `spec.md`: architecture, file structure, database tables, external services.
@@ -37,7 +37,7 @@ One task at a time:
 Never weaken or delete a failing test to get to green. Fix the code, or flag the conflict with the spec to the user. Keep `tasks.md` status current.
 
 ## Phase 5, Review gate, per milestone
-Send `spec.md` plus the diff to MegaLens for review. Never send the chat that produced the code. The reviewers judge the diff against the spec in fresh context, so they catch drift from intent, not just bugs.
+Send `spec.md` plus the diff to MegaLens for review. Never send the chat that produced the code. The spec goes along as context, so the reviewers, reading in fresh context, can see what the code was meant to do. Checking that the finished work meets the spec stays with you and the user; that is what the Phase 4 tests are for.
 
 Treat review findings as a filter, not a verdict. Verify each finding against the actual code before applying it. Show the user the findings you rejected and why.
 
